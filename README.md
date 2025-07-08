@@ -1,4 +1,5 @@
-# My C POSIX-Threading learning journey
+<p align="center"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fnmuax05zxoab1.gif&f=1&nofb=1&ipt=a71ffab72c0f394a68279e6d8d03c98be5d2d5554cf3dde0db25d7bac1fda89b" width="500"></p>
+<h1 align="center">My C POSIX-Threading learning journey</h1>
 
 ## 📚 Resources
 
