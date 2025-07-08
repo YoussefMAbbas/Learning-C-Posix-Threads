@@ -1,9 +1,6 @@
-#include <asm-generic/errno-base.h>
-#include <errno.h>
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
 
 void *routine() {
