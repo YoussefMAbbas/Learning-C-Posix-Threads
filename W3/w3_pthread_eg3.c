@@ -3,8 +3,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define THREADS_NUMS 3
-
 void ErrMsg(const char *msg);
 void *UserInfo(void *args);
 
