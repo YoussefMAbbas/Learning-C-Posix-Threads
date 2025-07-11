@@ -17,9 +17,14 @@ int main(int argc, char *argv[]) {
   pthread_t threads[THREADS_NUM];
 
   for (int i = 0; i < THREADS_NUM; i++) {
-    int *a = malloc(sizeof(int));
-    *a = i;
-    int threadCreated = pthread_create(&threads[i], NULL, &Routine, (void *)a);
+    int *subscript = malloc(sizeof(int));
+    if (subscript == NULL) {
+      ErrMsg("malloc()");
+    }
+
+    *subscript = i;
+
+    int threadCreated = pthread_create(&threads[i], NULL, &Routine, (void *)subscript);
     if (threadCreated != 0) {
       ErrMsg("pthread_create()");
     }
