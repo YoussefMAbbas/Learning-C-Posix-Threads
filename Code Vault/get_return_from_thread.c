@@ -33,11 +33,16 @@ int main(int argc, char *argv[]) {
 
 void *Routine() {
   int num = (rand() % 6) + 1;
+
   int *res = malloc(sizeof(int));
+  if (res == NULL) {
+    ErrMsg("malloc()");
+  }
+
   *res = num;
   printf("RRes addr: %p\n", (void *)res);
   printf("RRes value: %d\n", *res);
-  return (void *)res;
+  pthread_exit(res);
 }
 
 void ErrMsg(const char *msg) {
