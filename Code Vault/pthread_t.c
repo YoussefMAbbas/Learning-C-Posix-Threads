@@ -19,8 +19,6 @@ int main() {
     }
   }
 
-  pthread_exit(NULL);
-
   for (int i = 0; i < MAX_THREADS; i++) {
     if (pthread_join(threads[i], NULL) != 0) {
       ErrMsg("pthread_join()");
